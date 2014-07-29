@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8210FE6B-58FA-4315-A06B-5E48F4EA43DA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WayFinder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>03822759-18E5-4478-AD36-9310B5D465F2</key>
+		<string>ssh://github.com/contexthub/wayfinder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WayFinder.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>03822759-18E5-4478-AD36-9310B5D465F2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/contexthub/wayfinder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>03822759-18E5-4478-AD36-9310B5D465F2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>03822759-18E5-4478-AD36-9310B5D465F2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wayfinder</string>
+		</dict>
+	</array>
+</dict>
+</plist>
