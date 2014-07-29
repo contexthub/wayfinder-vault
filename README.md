@@ -28,10 +28,9 @@ If you haven't already, go through the first version of WayFinder for a broader 
 You will need to create your own ContextHub account for this demo, so log into the portal and have an app ID ready to use. In order for any events to be triggered (geofence_in/out, beacon_in/out/changed, etc..), there must be a contextual rule on the server. Contextual rules facilitate additional actions that can be performed when ContextHub received a contextual event from a device. For right now, we don't need any additional processing, so these context rules will be simple. If you need more help setting up contexts, refer to the "Hello ContextHub" example for more info.
 
 1. In the "Contexts" tab, click, "New Context" and create 3 new contexts for "beacon_in", "beacon_out", and "beacon_changed". In the code box, write "true" to indicate the result of this rule is always true.
-1. Click on the "Beacons" tab to access all of the beacons for your app. Beacons can be created both on the server and through the SDK using the `CCHBeaconService` service. Recreate the same beacons from above in the setup section on the ContextHub server, making sure to include the major and minor values. Give them all the tag "beacon-wayfinder".
-2. Click on the vault tab in ContextHub to see the data you have stored in the vault. The vault is where you can store data to access in your app at any time in json format. Go ahead and and click the "Add data" button, then add 3 vault items with the tag "vault-wayfinder" that are inside `wayfinderBeaconVaultData.json`.
-
-3. At this point, all server side data on ContextHub is setup. Remember to add your individual app id to your app delegate then your app should be ready to go.
+2. Click on the "Beacons" tab to access all of the beacons for your app. Beacons can be created both on the server and through the SDK using the `CCHBeaconService` service. Recreate the same beacons from above in the setup section on the ContextHub server, making sure to include the major and minor values. Give them all the tag "beacon-wayfinder".
+3. Click on the vault tab in ContextHub to see the data you have stored in the vault. The vault is where you can store data to access in your app at any time in json format. Go ahead and and click the "Add data" button, then add 3 vault items with the tag "vault-wayfinder" that are inside `wayfinderBeaconVaultData.json` in the Xcode project.
+4. At this point, all server side data on ContextHub is setup. Remember to add your individual app id to your app delegate then your app should be ready to go.
 
 
 ### Demo
