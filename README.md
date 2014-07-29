@@ -50,10 +50,11 @@ Device (unchanged from vanilla WayFinder):
 So that's pretty much the same. But this app is about changing the data in the server without recompiling so lets do that now.
 ContextHub:
 
-8. Go back to the vault section in the developer portal, click on the gear icon, and edit the "Lobby" item. Change the text after "locationDescription" to something new like "YOU'RE AT THE ENTRANCE", then click update vault.
+1. Go back to the vault section in the developer portal, click on the gear icon, and edit the "Lobby" item. Change the text after "locationDescription" to something new like "YOU'RE AT THE ENTRANCE", then click update vault.
 
 Device:
-9. Back on your device, close and rerun the app and notice the information change!
+
+1. Back on your device, close and rerun the app and notice the information change!
 
 Now you are free to change and update information in the demo without changing the app in the device. This demo is also smart enough that you can add more beacons and associated vault items to make your WayFinding trip even longer (you'll need additional map images of course)!
 
