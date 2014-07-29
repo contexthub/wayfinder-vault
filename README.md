@@ -63,9 +63,13 @@ Now you are free to change and update information in the demo without changing t
 
 Building on the first WayFinder, the critical part of this demo is grabbing beacon data from off the server to populate your local beacon store:
 
-1. To grab beacons from off the server and check if you have any beacons, call `[[CCHBeaconService sharedService] getBeaconsWithTags:@[@"wayfinder"] completionHandler:^(NSArray *beacons, NSError *error)`. `NSArray *beacons` will have a count of the number of beacons with that tag (it could be zero).
-2. Loop through each of the beacons and call `[CCHBeaconService regionForBeaconInfo:]` on a beacon item in the array in order to get a CLBeaconRegion that contains the proximityUUID, identifier, major, and minor values.
-3. To grab vault data associated with each beacon, you use the CCHVault. Call `[[CCHVault sharedService] getItemsWithTags:@"vault-wayfinder" completion:^(NSArray *carbonResponses, NSError *error){}];` which will grab the vault items in a container. Then we associate the beacon data with the data from the vault through an `NSPredicate` search on the name parameter. Look at the code in WFBeaconStore and WFBeaconMetadata for more info.
+1. To grab beacons from off the server and check if you have any beacons, call 
+`[[CCHBeaconService sharedService] getBeaconsWithTags:@[@"wayfinder"] completionHandler:^(NSArray *beacons, NSError *error)`. 
+`NSArray *beacons` will have a count of the number of beacons with that tag (it could be zero).
+2. Loop through each of the beacons and call 
+`[CCHBeaconService regionForBeaconInfo:]` on a beacon item in the array in order to get a CLBeaconRegion that contains the proximityUUID, identifier, major, and minor values.
+3. To grab vault data associated with each beacon, you use the CCHVault. Call 
+`[[CCHVault sharedService] getItemsWithTags:@"vault-wayfinder" completion:^(NSArray *carbonResponses, NSError *error){}];` which will grab the vault items in a container. Then we associate the beacon data with the data from the vault through an `NSPredicate` search on the name parameter. Look at the code in WFBeaconStore and WFBeaconMetadata for more info.
 
 
 That's it! Hopefully this demo showed you how storing data in the vault adds a more dynamic feel to your application by keeping information up to date without needing to change anything inside the app.
