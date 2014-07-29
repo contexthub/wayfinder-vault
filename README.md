@@ -37,7 +37,7 @@ You will need to create your own ContextHub account for this demo, so log into t
 
 Launch and run the app from your device. Here's how it works:
 
-Device (unchanged from vanilla WayFinder):
+#####Device (unchanged from vanilla WayFinder):
 
 1. The app will wait until it detects any beacons are in range to display the welcome screen. 
 2. The app will wait until it detects the first "LOBBY" beacon specifically in close range (~1-2 ft) before showing the "Start Tour" button.
@@ -52,7 +52,7 @@ ContextHub:
 
 1. Go back to the vault section in the developer portal, click on the gear icon, and edit the "Lobby" item. Change the text after "locationDescription" to something new like "YOU'RE AT THE ENTRANCE", then click update vault.
 
-Device:
+#####Device:
 
 1. Back on your device, close and rerun the app and notice the information change!
 
