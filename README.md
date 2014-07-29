@@ -29,45 +29,8 @@ You will need to create your own ContextHub account for this demo, so log into t
 
 1. In the "Contexts" tab, click, "New Context" and create 3 new contexts for "beacon_in", "beacon_out", and "beacon_changed". In the code box, write "true" to indicate the result of this rule is always true.
 1. Click on the "Beacons" tab to access all of the beacons for your app. Beacons can be created both on the server and through the SDK using the `CCHBeaconService` service. Recreate the same beacons from above in the setup section on the ContextHub server, making sure to include the major and minor values. Give them all the tag "beacon-wayfinder".
-2. Click on the vault tab in ContextHub to see the data you have stored in the vault. The vault is where you can store data to access in your app at any time in json format. Go ahead and and click the "Add data" button, then add 3 vault items with the tag "vault-wayfinder" as listed below (no particular order):
-`{
-  "name": "LOBBY",
-  "uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-  "major": "100",
-  "minor": "1",
-  "nextBeaconName": "IDEAWALL",
-  "locationDescription": "YOU'RE AT THE LOBBY",
-  "locationInformation": "ChaiOne is an Enterprise Mobility Agency focused on creating innovative, beautiful mobile solution that solve complex business problems of large enterprises, with a specific focus on the energy industry.",
-  "nextBeaconDirection": "Go STRAIGHT and turn LEFT",
-  "nextBeaconMapImageName": "lobby-map",
-  "nextBeaconDirectionBoldWords": "[\"STRAIGHT\", \"LEFT\"]",
-  "nextBeaconDirectionImageName": "straight-left-arrow"
-}`
-`{
-  "name": "IDEAWALL",
-  "uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-  "major": "100",
-  "minor": "2",
-  "nextBeaconName": "TEAMROOM",
-  "locationDescription": "YOU'RE AT THE IDEA WALL",
-  "locationInformation": "ChaiOne will open its headquarters in mid 2014. Take a look at the buildin's renderings and explore some of our awesome ideas. We're planning on having an awesome rooftop, an indoor pool, a zoo, and free beer 24/7.",
-  "nextBeaconDirection": "Go STRAIGHT and turn LEFT",
-  "nextBeaconMapImageName": "idea-wall-map",
-  "nextBeaconDirectionBoldWords": "[\"STRAIGHT\", \"LEFT\"]",
-  "nextBeaconDirectionImageName": "straight-left-arrow"
-}`
-`{
-  "name": "TEAMROOM",
-  "uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-  "major": "100",
-  "minor": "3",
-  "nextBeaconName": "",
-  "locationDescription": "YOU'RE AT THE TEAM ROOM",
-  "locationInformation": "The ChaiOne team room is where we create apps for many of our important clients. Our design and dev team spend their time happily working on each and every project. By 2015, we will have produced 200 iOS apps. Make sure to download them all.",
-  "nextBeaconDirection": "",
-  "nextBeaconMapImageName": "",
-  "nextBeaconDirectionImageName": ""
-}`
+2. Click on the vault tab in ContextHub to see the data you have stored in the vault. The vault is where you can store data to access in your app at any time in json format. Go ahead and and click the "Add data" button, then add 3 vault items with the tag "vault-wayfinder" that are inside `wayfinderBeaconVaultData.json`.
+
 3. At this point, all server side data on ContextHub is setup. Remember to add your individual app id to your app delegate then your app should be ready to go.
 
 
